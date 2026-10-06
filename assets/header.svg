@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="SUPAKRIT ODTHON - #11 - FULL-STACK DEVELOPER">
 <title>SUPAKRIT ODTHON - #11 - FULL-STACK DEVELOPER</title>
 <defs><pattern id="carbon" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-<rect width="8" height="8" fill="#0A0A0A"/><rect width="4" height="4" fill="#151515"/><rect x="4" y="4" width="4" height="4" fill="#151515"/></pattern>
-<linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0A0A0A" stop-opacity="0"/><stop offset="1" stop-color="#0A0A0A" stop-opacity=".95"/></linearGradient>
+<rect width="8" height="8" fill="#0B0E13"/><rect width="4" height="4" fill="#141922"/><rect x="4" y="4" width="4" height="4" fill="#141922"/></pattern>
+<linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0B0E13" stop-opacity="0"/><stop offset="1" stop-color="#0B0E13" stop-opacity=".95"/></linearGradient>
 <clipPath id="card"><rect width="1200" height="360" rx="14"/></clipPath>
 </defs>
-<style>text{font-family:'Arial Black','Helvetica Neue',Helvetica,Arial,sans-serif} .mono{font-family:'SF Mono','Menlo','Consolas',monospace} @keyframes l0{0%,4%{fill:#2B0A0C}5%,44%{fill:#E60012}45%,100%{fill:#2B0A0C}}.l0{animation:l0 7s infinite}
-@keyframes l1{0%,11%{fill:#2B0A0C}12%,44%{fill:#E60012}45%,100%{fill:#2B0A0C}}.l1{animation:l1 7s infinite}
-@keyframes l2{0%,18%{fill:#2B0A0C}19%,44%{fill:#E60012}45%,100%{fill:#2B0A0C}}.l2{animation:l2 7s infinite}
-@keyframes l3{0%,25%{fill:#2B0A0C}26%,44%{fill:#E60012}45%,100%{fill:#2B0A0C}}.l3{animation:l3 7s infinite}
-@keyframes l4{0%,32%{fill:#2B0A0C}33%,44%{fill:#E60012}45%,100%{fill:#2B0A0C}}.l4{animation:l4 7s infinite}
+<style>text{font-family:'Arial Black','Helvetica Neue',Helvetica,Arial,sans-serif} .mono{font-family:'SF Mono','Menlo','Consolas',monospace} @keyframes l0{0%,4%{fill:#2B0A0C}5%,44%{fill:#E7222E}45%,100%{fill:#2B0A0C}}.l0{animation:l0 7s infinite}
+@keyframes l1{0%,11%{fill:#2B0A0C}12%,44%{fill:#E7222E}45%,100%{fill:#2B0A0C}}.l1{animation:l1 7s infinite}
+@keyframes l2{0%,18%{fill:#2B0A0C}19%,44%{fill:#E7222E}45%,100%{fill:#2B0A0C}}.l2{animation:l2 7s infinite}
+@keyframes l3{0%,25%{fill:#2B0A0C}26%,44%{fill:#E7222E}45%,100%{fill:#2B0A0C}}.l3{animation:l3 7s infinite}
+@keyframes l4{0%,32%{fill:#2B0A0C}33%,44%{fill:#E7222E}45%,100%{fill:#2B0A0C}}.l4{animation:l4 7s infinite}
 @keyframes slide{from{transform:translateX(-900px)}to{transform:translateX(0)}}
 .band{animation:slide 1.4s cubic-bezier(.2,.8,.2,1) both}
 @keyframes go{0%,44%{opacity:0}46%,92%{opacity:1}100%{opacity:0}}
@@ -19,56 +19,36 @@
 @keyframes speed{0%{transform:translateX(1300px)}100%{transform:translateX(-400px)}}
 .sp{animation:speed 1.6s linear infinite}
 
-@keyframes fire{0%,61%{transform:scaleX(0);opacity:0}62%{transform:scaleX(1.15);opacity:1}65%{transform:scaleX(.35);opacity:.6}
-70%{transform:scaleX(1);opacity:1}73%{transform:scaleX(.25);opacity:.5}78%{transform:scaleX(1.3);opacity:1}84%,100%{transform:scaleX(0);opacity:0}}
-.fire{transform-box:fill-box;transform-origin:right center;animation:fire 3.2s infinite}
-@keyframes glow{0%,61%{opacity:0}62%,64%{opacity:.9}67%{opacity:.2}70%,72%{opacity:.8}75%{opacity:.2}78%,81%{opacity:1}86%,100%{opacity:0}}
-.glow{animation:glow 3.2s infinite}
-@keyframes spark{0%,77%{opacity:0;transform:translate(0,0)}79%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy))}}
-.spark{animation:spark 3.2s infinite}
-@keyframes bang{0%,77%{opacity:0;transform:scale(.6)}79%{opacity:1;transform:scale(1.1)}88%,100%{opacity:0;transform:scale(1)}}
-.bang{transform-box:fill-box;transform-origin:center;animation:bang 3.2s infinite}
-
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
 <g clip-path="url(#card)">
 <rect width="1200" height="360" fill="url(#carbon)"/>
 
-<rect class="sp" style="animation-delay:0s" x="0" y="40" width="220" height="2" fill="#FF1E2D" opacity=".35"/><rect class="sp" style="animation-delay:0.5s" x="0" y="70" width="140" height="2" fill="#F5F5F5" opacity=".35"/><rect class="sp" style="animation-delay:0.9s" x="0" y="250" width="260" height="2" fill="#FF1E2D" opacity=".35"/><rect class="sp" style="animation-delay:0.3s" x="0" y="270" width="120" height="2" fill="#F5F5F5" opacity=".35"/><rect class="sp" style="animation-delay:1.2s" x="0" y="232" width="180" height="2" fill="#E60012" opacity=".35"/>
-<g class="band"><g transform="translate(560,0)"><rect class="" x="120" y="-20" width="46" height="400" fill="#E60012" transform="skewX(-20)"/>
-<rect class="" x="176" y="-20" width="46" height="400" fill="#F5F5F5" transform="skewX(-20)"/>
-<rect class="" x="232" y="-20" width="46" height="400" fill="#E60012" transform="skewX(-20)"/></g></g>
+<rect class="sp" style="animation-delay:0s" x="0" y="40" width="220" height="2" fill="#81C4FF" opacity=".35"/><rect class="sp" style="animation-delay:0.5s" x="0" y="70" width="140" height="2" fill="#F5F7FA" opacity=".35"/><rect class="sp" style="animation-delay:0.9s" x="0" y="250" width="260" height="2" fill="#81C4FF" opacity=".35"/><rect class="sp" style="animation-delay:0.3s" x="0" y="270" width="120" height="2" fill="#F5F7FA" opacity=".35"/><rect class="sp" style="animation-delay:1.2s" x="0" y="232" width="180" height="2" fill="#E7222E" opacity=".35"/>
+<g class="band"><g transform="translate(560,0)"><rect class="" x="120" y="-20" width="46" height="400" fill="#81C4FF" transform="skewX(-20)"/>
+<rect class="" x="176" y="-20" width="46" height="400" fill="#16588E" transform="skewX(-20)"/>
+<rect class="" x="232" y="-20" width="46" height="400" fill="#E7222E" transform="skewX(-20)"/></g></g>
 <rect x="560" width="640" height="360" fill="url(#fade)" opacity=".35"/>
 <!-- number plate -->
 <g transform="translate(930,70)">
-  <rect width="220" height="170" rx="18" fill="#F5F5F5" transform="skewX(-8)"/>
-  <rect x="10" y="10" width="200" height="150" rx="12" fill="none" stroke="#0A0A0A" stroke-width="3" transform="skewX(-8)"/>
-  <text x="96" y="138" text-anchor="middle" font-size="128" font-style="italic" fill="#0A0A0A" letter-spacing="-6">11</text>
+  <rect width="220" height="170" rx="18" fill="#F5F7FA" transform="skewX(-8)"/>
+  <rect x="10" y="10" width="200" height="150" rx="12" fill="none" stroke="#0B0E13" stroke-width="3" transform="skewX(-8)"/>
+  <text x="96" y="138" text-anchor="middle" font-size="128" font-style="italic" fill="#0B0E13" letter-spacing="-6">11</text>
 </g>
 <g transform="translate(60,0)">
-  <text class="r1 mono" x="0" y="78" font-size="16" fill="#FF1E2D" letter-spacing="6">// DRIVER PROFILE</text>
-  <text class="r2" x="0" y="150" font-size="64" font-style="italic" fill="#F5F5F5" letter-spacing="1">SUPAKRIT ODTHON</text>
+  <text class="r1 mono" x="0" y="78" font-size="16" fill="#81C4FF" letter-spacing="6">// DRIVER PROFILE</text>
+  <text class="r2" x="0" y="150" font-size="64" font-style="italic" fill="#F5F7FA" letter-spacing="1">SUPAKRIT ODTHON</text>
   <g class="r3">
-    <rect x="0" y="176" width="8" height="34" fill="#FF1E2D"/><rect x="12" y="176" width="8" height="34" fill="#C8C8C8"/><rect x="24" y="176" width="8" height="34" fill="#E60012"/>
-    <text x="48" y="203" font-size="26" font-style="italic" fill="#F5F5F5">FULL-STACK DEVELOPER</text>
-    <text class="mono" x="48" y="240" font-size="16" fill="#8C8C8C" letter-spacing="3">TEAM LOOKSOCIAL</text>
+    <rect x="0" y="176" width="8" height="34" fill="#81C4FF"/><rect x="12" y="176" width="8" height="34" fill="#16588E"/><rect x="24" y="176" width="8" height="34" fill="#E7222E"/>
+    <text x="48" y="203" font-size="26" font-style="italic" fill="#F5F7FA">FULL-STACK DEVELOPER</text>
+    <text class="mono" x="48" y="240" font-size="16" fill="#8A94A6" letter-spacing="3">TEAM LOOKSOCIAL</text>
     <g transform="translate(250,226)"><rect x="0" y="0" width="36" height="4" fill="#A51931"/><rect x="0" y="4" width="36" height="4" fill="#F4F5F8"/><rect x="0" y="8" width="36" height="8" fill="#2D2A4A"/><rect x="0" y="16" width="36" height="4" fill="#F4F5F8"/><rect x="0" y="20" width="36" height="4" fill="#A51931"/></g>
-    <text class="mono" x="296" y="245" font-size="16" fill="#8C8C8C" letter-spacing="3">THA</text>
+    <text class="mono" x="296" y="245" font-size="16" fill="#8A94A6" letter-spacing="3">THA</text>
   </g>
 </g>
-<rect x="51" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2E2E2E"/><circle class="l0" cx="70" cy="309" r="13" fill="#2B0A0C"/><rect x="97" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2E2E2E"/><circle class="l1" cx="116" cy="309" r="13" fill="#2B0A0C"/><rect x="143" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2E2E2E"/><circle class="l2" cx="162" cy="309" r="13" fill="#2B0A0C"/><rect x="189" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2E2E2E"/><circle class="l3" cx="208" cy="309" r="13" fill="#2B0A0C"/><rect x="235" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2E2E2E"/><circle class="l4" cx="254" cy="309" r="13" fill="#2B0A0C"/>
-<text class="go" x="320" y="318" font-size="22" font-style="italic" fill="#F5F5F5">LIGHTS OUT AND AWAY WE GO</text>
-<text class="go" x="320" y="318" font-size="22" font-style="italic" fill="none" stroke="#E60012" stroke-width=".6" dx="2" dy="2" opacity=".6">LIGHTS OUT AND AWAY WE GO</text>
-
-<defs><linearGradient id="ti" x1="0" x2="1"><stop offset="0" stop-color="#3B5BA9"/><stop offset=".3" stop-color="#7A4FA0"/><stop offset=".6" stop-color="#C79A3C"/><stop offset="1" stop-color="#8C8C8C"/></linearGradient>
-<radialGradient id="flash"><stop offset="0" stop-color="#FFB347" stop-opacity=".8"/><stop offset="1" stop-color="#FF3B00" stop-opacity="0"/></radialGradient></defs>
-<ellipse class="glow" cx="990" cy="318" rx="170" ry="60" fill="url(#flash)"/>
-<path class="fire" d="M1052,292 C939.5,289.4 852.0,305.0 802,318 C852.0,331.0 939.5,346.6 1052,344 Z" fill="#FF2A00" opacity="0.85"/><path class="fire" d="M1052,300 C966.5,298.2 900.0,309.0 862,318 C900.0,327.0 966.5,337.8 1052,336 Z" fill="#FF7A00" opacity="1"/><path class="fire" d="M1052,307 C993.5,305.9 948.0,312.5 922,318 C948.0,323.5 993.5,330.1 1052,329 Z" fill="#FFD000" opacity="1"/><path class="fire" d="M1052,312 C1020.5,311.4 996.0,315.0 982,318 C996.0,321.0 1020.5,324.6 1052,324 Z" fill="#FFF6D0" opacity="1"/><path class="fire" d="M1052,309 C1040.3,308.1 1031.2,313.5 1026,318 C1031.2,322.5 1040.3,327.9 1052,327 Z" fill="#4DA3FF" opacity="0.8"/>
-<circle class="spark" style="--dx:-140px;--dy:-40px;animation-delay:0s" cx="1000" cy="318" r="2.5" fill="#FFD27A"/><circle class="spark" style="--dx:-180px;--dy:10px;animation-delay:0.05s" cx="1000" cy="318" r="2" fill="#FFD27A"/><circle class="spark" style="--dx:-120px;--dy:35px;animation-delay:0.1s" cx="1000" cy="318" r="2.5" fill="#FFD27A"/><circle class="spark" style="--dx:-200px;--dy:-15px;animation-delay:0.02s" cx="1000" cy="318" r="1.8" fill="#FFD27A"/><circle class="spark" style="--dx:-90px;--dy:-50px;animation-delay:0.08s" cx="1000" cy="318" r="2" fill="#FFD27A"/>
-<rect x="1052" y="300" width="160" height="36" rx="4" fill="url(#ti)"/>
-<rect x="1052" y="300" width="160" height="8" rx="3" fill="#fff" opacity=".25"/>
-<ellipse cx="1052" cy="318" rx="8" ry="18" fill="#1A1A1A" stroke="#C79A3C" stroke-width="3"/>
-<text class="bang" x="860" y="282" text-anchor="middle" font-size="26" font-style="italic" fill="#FFD000" stroke="#0A0A0A" stroke-width="1">BANG!</text>
+<rect x="51" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2A3240"/><circle class="l0" cx="70" cy="309" r="13" fill="#2B0A0C"/><rect x="97" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2A3240"/><circle class="l1" cx="116" cy="309" r="13" fill="#2B0A0C"/><rect x="143" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2A3240"/><circle class="l2" cx="162" cy="309" r="13" fill="#2B0A0C"/><rect x="189" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2A3240"/><circle class="l3" cx="208" cy="309" r="13" fill="#2B0A0C"/><rect x="235" y="290" width="38" height="38" rx="6" fill="#05070A" stroke="#2A3240"/><circle class="l4" cx="254" cy="309" r="13" fill="#2B0A0C"/>
+<text class="go" x="320" y="318" font-size="22" font-style="italic" fill="#F5F7FA">LIGHTS OUT AND AWAY WE GO</text>
+<text class="go" x="320" y="318" font-size="22" font-style="italic" fill="none" stroke="#E7222E" stroke-width=".6" dx="2" dy="2" opacity=".6">LIGHTS OUT AND AWAY WE GO</text>
 
 </g>
-<rect x=".5" y=".5" width="1199" height="359" rx="14" fill="none" stroke="#2E2E2E"/>
+<rect x=".5" y=".5" width="1199" height="359" rx="14" fill="none" stroke="#2A3240"/>
 </svg>

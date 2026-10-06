@@ -24,7 +24,7 @@ STANDINGS = [  # (language, team/role, share %, colour)
 ]
 
 # ---- theme ----
-THEME = os.environ.get("THEME", "nismo")
+THEME = os.environ.get("THEME", "bmw")
 THEMES = {
     # accent, secondary, redline, stripes, bg, carbon, fg, muted, border, tile
     "bmw": ("#81C4FF", "#16588E", "#E7222E", ("#81C4FF", "#16588E", "#E7222E"), "#0B0E13", "#141922", "#F5F7FA", "#8A94A6", "#2A3240", "#0F141C"),
@@ -120,34 +120,6 @@ header = f"""
 {''.join(lights)}
 <text class="go" x="320" y="318" font-size="22" font-style="italic" fill="{FG}">LIGHTS OUT AND AWAY WE GO</text>
 <text class="go" x="320" y="318" font-size="22" font-style="italic" fill="none" stroke="{RED}" stroke-width=".6" dx="2" dy="2" opacity=".6">LIGHTS OUT AND AWAY WE GO</text>
-"""
-# ---- exhaust + backfire (shared 3.2s rhythm with turbo) ----
-CYCLE = 3.2
-header_style += """
-@keyframes fire{0%,61%{transform:scaleX(0);opacity:0}62%{transform:scaleX(1.15);opacity:1}65%{transform:scaleX(.35);opacity:.6}
-70%{transform:scaleX(1);opacity:1}73%{transform:scaleX(.25);opacity:.5}78%{transform:scaleX(1.3);opacity:1}84%,100%{transform:scaleX(0);opacity:0}}
-.fire{transform-box:fill-box;transform-origin:right center;animation:fire 3.2s infinite}
-@keyframes glow{0%,61%{opacity:0}62%,64%{opacity:.9}67%{opacity:.2}70%,72%{opacity:.8}75%{opacity:.2}78%,81%{opacity:1}86%,100%{opacity:0}}
-.glow{animation:glow 3.2s infinite}
-@keyframes spark{0%,77%{opacity:0;transform:translate(0,0)}79%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy))}}
-.spark{animation:spark 3.2s infinite}
-@keyframes bang{0%,77%{opacity:0;transform:scale(.6)}79%{opacity:1;transform:scale(1.1)}88%,100%{opacity:0;transform:scale(1)}}
-.bang{transform-box:fill-box;transform-origin:center;animation:bang 3.2s infinite}
-"""
-flame = lambda w, h, c, o=1: (f'<path class="fire" d="M1052,{318 - h} C{1052 - w * .45},{318 - h * 1.1} {1052 - w * .8},{318 - h * .5} {1052 - w},318 '
-                             f'C{1052 - w * .8},{318 + h * .5} {1052 - w * .45},{318 + h * 1.1} 1052,{318 + h} Z" fill="{c}" opacity="{o}"/>')
-sparks = "".join(f'<circle class="spark" style="--dx:{dx}px;--dy:{dy}px;animation-delay:{d}s" cx="1000" cy="318" r="{r}" fill="#FFD27A"/>'
-                 for dx, dy, d, r in [(-140, -40, 0, 2.5), (-180, 10, .05, 2), (-120, 35, .1, 2.5), (-200, -15, .02, 1.8), (-90, -50, .08, 2)])
-header += f"""
-<defs><linearGradient id="ti" x1="0" x2="1"><stop offset="0" stop-color="#3B5BA9"/><stop offset=".3" stop-color="#7A4FA0"/><stop offset=".6" stop-color="#C79A3C"/><stop offset="1" stop-color="#8C8C8C"/></linearGradient>
-<radialGradient id="flash"><stop offset="0" stop-color="#FFB347" stop-opacity=".8"/><stop offset="1" stop-color="#FF3B00" stop-opacity="0"/></radialGradient></defs>
-<ellipse class="glow" cx="990" cy="318" rx="170" ry="60" fill="url(#flash)"/>
-{flame(250, 26, "#FF2A00", .85)}{flame(190, 18, "#FF7A00")}{flame(130, 11, "#FFD000")}{flame(70, 6, "#FFF6D0")}{flame(26, 9, "#4DA3FF", .8)}
-{sparks}
-<rect x="1052" y="300" width="160" height="36" rx="4" fill="url(#ti)"/>
-<rect x="1052" y="300" width="160" height="8" rx="3" fill="#fff" opacity=".25"/>
-<ellipse cx="1052" cy="318" rx="8" ry="18" fill="#1A1A1A" stroke="#C79A3C" stroke-width="3"/>
-<text class="bang" x="860" y="282" text-anchor="middle" font-size="26" font-style="italic" fill="#FFD000" stroke="{BG}" stroke-width="1">BANG!</text>
 """
 write("header.svg", svg(1200, 360, header, header_style, f"{NAME} - #{NUMBER} - {ROLE}"))
 
@@ -317,47 +289,32 @@ driver = f"""
 """
 write("driver.svg", svg(1200, 420, driver, card_style, f"Driver card: {NAME} #{NUMBER}"))
 
-# ================= TROPHY CABINET =================
-METALS = {"gold": ("#FFF1A8", "#E2B93B", "#8C6A12"), "silver": ("#FFFFFF", "#BCC4CC", "#646C74"), "bronze": ("#F8C79A", "#CD7F32", "#6E3F14")}
-TROPHIES = [  # (metal, title, value, caption)
+# ================= SEASON AWARDS =================
+AWARDS = [  # (tier, title, value, caption)
     ("gold", "ENDURANCE", f"{COMMITS}", "career commits"),
-    ("gold", "POLE POSITION", "GO P1", "43.8% of all laps"),
+    ("gold", "POLE POSITION", "GO", "43.8% of all laps"),
     ("silver", "LAP RECORD", "436", "commits in one race"),
     ("silver", "DOUBLE STINT", "83%", "go + typescript"),
     ("bronze", "POLYGLOT", f"{LANGS}", "languages raced"),
     ("bronze", "VETERAN", f"{SEASONS}", f"seasons since {ROOKIE}"),
 ]
-BOWL = "M-40,0 H40 V18 C40,58 22,74 0,77 C-22,74 -40,58 -40,18 Z"
-tro_style = """@keyframes shine{0%,60%{transform:translateX(-120px)}100%{transform:translateX(120px)}}
-.shine{animation:shine 4s ease-in-out infinite}
-@keyframes drop{from{opacity:0;transform:translateY(-24px)}to{opacity:1;transform:none}}"""
-grads, cups = [], []
-for i, (m, title, val, cap) in enumerate(TROPHIES):
-    hi, mid, lo = METALS[m]
-    grads.append(f'<linearGradient id="m{i}" x1="0" x2="1"><stop offset="0" stop-color="{lo}"/><stop offset=".35" stop-color="{hi}"/><stop offset=".6" stop-color="{mid}"/><stop offset="1" stop-color="{lo}"/></linearGradient>'
-                 f'<clipPath id="b{i}"><path d="{BOWL}"/></clipPath>')
-    x = 110 + i * 196
-    big = 1.15 if m == "gold" else (1.0 if m == "silver" else .9)
-    cups.append(f"""<g transform="translate({x},{int(70 + (1.15 - big) * 120)}) scale({big})"><g style="animation:drop .6s {.15 + i * .12:.2f}s both">
-<path d="M-40,8 C-66,8 -66,50 -28,56 M40,8 C66,8 66,50 28,56" fill="none" stroke="url(#m{i})" stroke-width="7" stroke-linecap="round"/>
-<path d="{BOWL}" fill="url(#m{i})"/>
-<g clip-path="url(#b{i})"><rect class="shine" style="animation-delay:{i * .35:.2f}s" x="-20" y="-10" width="18" height="100" fill="#fff" opacity=".55" transform="skewX(-20)"/></g>
-<path d="M0,22 l5,11 12,1 -9,8 3,12 -11,-6 -11,6 3,-12 -9,-8 12,-1 Z" fill="{lo}" opacity=".55"/>
-<rect x="-6" y="77" width="12" height="20" fill="url(#m{i})"/>
-<path d="M-20,97 H20 L26,107 H-26 Z" fill="url(#m{i})"/>
-<rect x="-34" y="107" width="68" height="26" rx="3" fill="#1A1410" stroke="{mid}"/>
-<text x="0" y="125" text-anchor="middle" font-size="12" font-style="italic" fill="{hi}">{val}</text>
-</g></g>""")
-    cups.append(f"""<g style="animation:drop .6s {.3 + i * .12:.2f}s both">
-<text x="{x}" y="268" text-anchor="middle" font-size="17" font-style="italic" fill="{FG}">{title}</text>
-<text class="mono" x="{x}" y="292" text-anchor="middle" font-size="12" letter-spacing="1" fill="{MUTED}">{cap}</text></g>""")
-trophy = f"""<defs>{''.join(grads)}<linearGradient id="shelf" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="{BORDER}"/><stop offset="1" stop-color="{BG}"/></linearGradient>
-<radialGradient id="spot" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="{LB}" stop-opacity=".18"/><stop offset="1" stop-color="{LB}" stop-opacity="0"/></radialGradient></defs>
-<rect width="1200" height="340" fill="url(#spot)"/>
-<text class="mono" x="40" y="40" font-size="14" letter-spacing="5" fill="{LB}">// TROPHY CABINET</text>
-<g transform="translate(1040,18)">{stripes(0, 0, 18, 34, gap=4)}</g>
-<rect x="20" y="228" width="1160" height="10" fill="url(#shelf)"/>
-{''.join(cups)}
+TIER = {"gold": "#D4AF37", "silver": "#C0C6CC", "bronze": "#C07A3A"}
+aw_style = """@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}"""
+cw = 1120 / len(AWARDS)
+cols = []
+for i, (tier, title, val, cap) in enumerate(AWARDS):
+    x = 40 + i * cw
+    sep = f'<line x1="{x:.0f}" y1="78" x2="{x:.0f}" y2="226" stroke="{BORDER}"/>' if i else ""
+    cols.append(f"""{sep}<g transform="translate({x + 24:.0f},0)"><g style="animation:rise .5s {.1 + i * .07:.2f}s both">
+<rect y="78" width="28" height="3" fill="{TIER[tier]}"/>
+<text class="mono" x="0" y="106" font-size="11" letter-spacing="2" fill="{TIER[tier]}">{i + 1:02d} · {tier.upper()}</text>
+<text x="0" y="160" font-size="42" font-style="italic" fill="{FG}">{val}</text>
+<text x="0" y="190" font-size="15" font-style="italic" fill="{FG}">{title}</text>
+<text class="mono" x="0" y="212" font-size="12" fill="{MUTED}">{cap}</text></g></g>""")
+awards = f"""
+<text class="mono" x="40" y="44" font-size="14" letter-spacing="5" fill="{LB}">// SEASON AWARDS</text>
+<g transform="translate(1040,22)">{stripes(0, 0, 18, 34, gap=4)}</g>
+{''.join(cols)}
 """
-write("trophies.svg", svg(1200, 320, trophy, tro_style, "Trophy cabinet"))
+write("trophies.svg", svg(1200, 256, awards, aw_style, "Season awards: " + ", ".join(f"{t} {v}" for _, t, v, _ in AWARDS)))
 print("ok2")
