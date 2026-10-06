@@ -1,42 +1,42 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="Supakrit Odthon — #11 — Full-Stack Developer" />
+<img src="./assets/header.svg?v=2" width="100%" alt="Supakrit Odthon — #11 — Full-Stack Developer" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&duration=2600&pause=900&color=81C4FF&center=true&vCenter=true&width=700&lines=Full-stack+developer+%40+Looksocial;Go+%E2%80%A2+TypeScript+%E2%80%A2+Python;Building+APIs+at+full+throttle+%F0%9F%8F%81;Lights+out+and+away+we+go" alt="Typing SVG" />
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🏎️ Driver Card
 
-<img src="./assets/driver.svg" width="100%" alt="Driver card: Supakrit Odthon, #11, Team Looksocial, Thailand" />
+<img src="./assets/driver.svg?v=2" width="100%" alt="Driver card: Supakrit Odthon, #11, Team Looksocial, Thailand" />
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 📡 Telemetry
 
-<img src="./assets/telemetry.svg" width="100%" alt="928 commits across 8 repositories in 7 languages since 2021" />
+<img src="./assets/telemetry.svg?v=2" width="100%" alt="928 commits across 8 repositories in 7 languages since 2021" />
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🏁 Race Track
 
-<img src="./assets/race.svg" width="100%" alt="Contribution calendar drawn as a race track with the #11 car lapping it" />
+<img src="./assets/race.svg?v=2" width="100%" alt="Contribution calendar drawn as a race track with the #11 car lapping it" />
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🏆 Season Awards
 
-<img src="./assets/trophies.svg" width="100%" alt="Season awards: Endurance 928 commits, Pole Position Go, Lap Record 436, Double Stint 83%, Polyglot 7, Veteran 6 seasons" />
+<img src="./assets/trophies.svg?v=2" width="100%" alt="Season awards: Endurance 928 commits, Pole Position Go, Lap Record 436, Double Stint 83%, Polyglot 7, Veteran 6 seasons" />
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🥇 Championship Standings
 
-<img src="./assets/standings.svg" width="100%" alt="Languages by share of commits: Go 43.8%, TypeScript 39.4%, Python 8.2%" />
+<img src="./assets/standings.svg?v=2" width="100%" alt="Languages by share of commits: Go 43.8%, TypeScript 39.4%, Python 8.2%" />
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🔧 The Garage
 
@@ -102,7 +102,7 @@
 ![LINE](https://img.shields.io/badge/LINE%20LIFF-0B0E13?style=for-the-badge&logo=line&logoColor=00C300)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-0B0E13?style=for-the-badge&logo=claude&logoColor=D97757)
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 ## 🏁 Season Highlights
 
@@ -116,7 +116,7 @@
 
 <div align="center">
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 <sub>Built at full throttle · 🔵🔷🔴</sub>
 
