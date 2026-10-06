@@ -20,6 +20,12 @@
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
+## 🏁 Race Track
+
+<img src="./assets/race.svg" width="100%" alt="Contribution calendar drawn as a race track with the #11 car lapping it" />
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
 ## 🏆 Trophy Cabinet
 
 <img src="./assets/trophies.svg" width="100%" alt="Trophies: Endurance 928 commits, Pole Position Go, Lap Record 436, Double Stint 83%, Polyglot 7, Veteran 6 seasons" />
